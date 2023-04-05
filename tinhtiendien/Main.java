@@ -13,14 +13,13 @@ class DienSinhHoat {
   public DienSinhHoat() {
   }
 
-  public DienSinhHoat(String maHoGiaDinh, int thang, int nam, int soDau, int soCuoi, int soDien, int thanhTien) {
+  public DienSinhHoat(String maHoGiaDinh, int thang, int nam, int soDau, int soCuoi, int soDien) {
     this.maHoGiaDinh = maHoGiaDinh;
     this.thang = thang;
     this.nam = nam;
     this.soDau = soDau;
     this.soCuoi = soCuoi;
     this.soDien = soDien;
-    this.thanhTien = thanhTien;
   }
 
   void input() {
