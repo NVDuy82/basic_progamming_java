@@ -135,9 +135,9 @@ class GiaDien {
   private final Bac bac4 = new Bac(201, 2536);
   private final Bac bac5 = new Bac(301, 2834);
   private final Bac bac6 = new Bac(401, 2927);
-  
-  private int soDien, bac;
   private List<Bac> rule = new ArrayList<>();
+  
+  private int soDien;
   
   public GiaDien(int soDien) {
     this.soDien = soDien;
@@ -151,7 +151,6 @@ class GiaDien {
   
   int tinhThanhTien() {
     int res = 0;
-    System.out.println(rule.size() - 1);
     for (int i = rule.size() - 1; i >= 0 ; i--) {
       if (soDien >= rule.get(i).getLowerLimit()) {
         res += (soDien - rule.get(i).getLowerLimit() + 1) * rule.get(i).getDonGia();
